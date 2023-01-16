@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Fire Data</title>
+    </head>
+    <body>
+        <form action="/data" method="POST">
+            {% csrf_token %}
+            <button type="submit"> Refresh Data</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Fire Data</title>
+    </head>
+    <body>
+        <form action="alertData/" method="POST">
+            {% csrf_token %}            
+            <label for="">The Fire Alert System</label>
+            </BR>
+            <label for="">Longitude : </label><input id="longitude" type="text" name="Longitude" value="">
+            </br>
+            <label for="">Lattitude : </label><input id="lattitude" type="text" name="Lattitude" value="">
+            </br>
+            <label for="">Zip : </label><input id="zip" type="text" name="zcode" value="">
+            </br>
+            <input type="submit" value="Get Alert">
+        </form>
+    </body>
+</html>
